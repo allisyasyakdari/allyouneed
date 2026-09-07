@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>allyouneed - Pricelist, Contact & Proof</title>
+  <meta name="description" content="Pricelist, kontak WhatsApp, dan bukti transaksi allyouneed by Al." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="./assets/images/owner.jpg">
+
+  <!-- Google Fonts: Baloo 2, Quicksand, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Clean Pastel Carrd Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <!-- CENTERED CARRD WRAPPER -->
+  <div class="carrd-wrapper">
+    <main class="carrd-main" role="main">
+      
+      <!-- TOP BANNER & PROFILE (FOTO PEMILIK TOKO) -->
+      <header class="carrd-header-banner">
+        
+        <!-- Avatar Foto Kucing Pita Asli dari User -->
+        <div class="carrd-avatar-container">
+          <img 
+            src="./assets/images/owner.jpg" 
+            alt="Foto Al - allyouneed" 
+            class="carrd-avatar-img"
+          />
+        </div>
+
+        <!-- Nama Toko & Handle -->
+        <h1 class="carrd-title store-name-text">
+          allyouneed
+        </h1>
+        <span class="carrd-handle store-handle-text">
+          @allyouneed
+        </span>
+
+        <!-- Bio Sambutan Bersih -->
+        <p class="carrd-bio store-bio-text">
+          welcome to allyouneed! pusat app & akun premium murah, kilat & bergaransi.
+        </p>
+      </header>
+
+      <!-- 3 TABS UTAMA (PRICELIST, CONTACT, PROOF) -->
+      <nav class="carrd-tabs-nav">
+        <button class="carrd-tab-btn active" data-tab="pricelist">
+          <i class="fa-solid fa-list-ul text-[#FF477E]"></i>
+          <span>Pricelist</span>
+        </button>
+        <button class="carrd-tab-btn" data-tab="contact">
+          <i class="fa-brands fa-whatsapp text-[#25D366]"></i>
+          <span>Contact</span>
+        </button>
+        <button class="carrd-tab-btn" data-tab="proof">
+          <i class="fa-solid fa-shield-halved text-[#FF8DA1]"></i>
+          <span>Proof</span>
+        </button>
+      </nav>
+
+      <!-- ================= TAB 1: PRICELIST (KOMPAK ACCORDION) ================= -->
+      <section id="tab-pricelist" class="carrd-tab-pane active">
+        
+        <!-- Live Search Input -->
+        <div class="carrd-search-bar">
+          <i class="fa-solid fa-magnifying-glass carrd-search-icon"></i>
+          <input 
+            type="text" 
+            id="carrdSearchInput" 
+            class="carrd-search-input" 
+            placeholder="Cari aplikasi (Netflix, Canva, Viu, CapCut)..." 
+          />
+        </div>
+
+        <!-- Filter Pill Kategori -->
+        <div id="categoryPills" class="carrd-filter-pills">
+          <!-- Rendered dynamically by main.js -->
+        </div>
+
+        <!-- Konten Accordion Produk -->
+        <div id="pricelistContent">
+          <!-- Rendered dynamically by main.js -->
+        </div>
+
+      </section>
+
+      <!-- ================= TAB 2: CONTACT ================= -->
+      <section id="tab-contact" class="carrd-tab-pane">
+        <div id="contactContent">
+          <!-- Rendered dynamically by main.js -->
+        </div>
+      </section>
+
+      <!-- ================= TAB 3: PROOF ================= -->
+      <section id="tab-proof" class="carrd-tab-pane">
+        <div id="proofContent">
+          <!-- Rendered dynamically by main.js -->
+        </div>
+      </section>
+
+      <!-- FOOTER BERSIH & RAPI -->
+      <footer class="carrd-footer">
+        <div class="font-bold text-[#3B2433]">
+          allyouneed • by Al
+        </div>
+        <div class="text-[10px] text-[#A68698] mt-0.5">
+          100% Legal & Bergaransi • Hosted on GitHub Pages Free
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- LIGHTBOX MODAL (ZOOM BUKTI TRANSAKSI) -->
+  <div id="lightboxModal" class="lightbox-modal" onclick="closeLightboxModal()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-2 mb-2 border-b border-pink-100">
+        <div class="font-bold text-xs text-[#3B2433]" id="lightboxCaption">
+          Bukti Transaksi
+        </div>
+        <button onclick="closeLightboxModal()" class="w-6 h-6 rounded-full bg-pink-100 hover:bg-pink-200 text-[#FF477E] flex items-center justify-center text-xs transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <img id="lightboxImg" src="" alt="Bukti Transaksi" />
+      <div class="text-[10px] text-center text-[#8C6A7D] mt-2">
+        Terverifikasi oleh allyouneed
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast">
+    <i class="fa-solid fa-check text-green-400"></i>
+    <span id="toastText">Nomor berhasil disalin!</span>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="./assets/js/products.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
