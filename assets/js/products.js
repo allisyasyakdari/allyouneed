@@ -932,5 +932,11 @@ const PROOF_ITEMS = [
     title: "Meitu VIP+",
     time: "07 Sep 2026 • 21:13 WIB",
     image: "./assets/images/proof/testi3.png"
+  },
+  {
+    id: 4,
+    title: "YouTube Premium",
+    time: "09 Sep 2026 • 09:38 WIB",
+    image: "./assets/images/proof/testi4.png"
   }
 ];
