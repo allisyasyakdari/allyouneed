@@ -938,5 +938,23 @@ const PROOF_ITEMS = [
     title: "YouTube Premium",
     time: "09 Sep 2026 • 09:38 WIB",
     image: "./assets/images/proof/testi4.png"
+  },
+  {
+    id: 5,
+    title: "Netflix",
+    time: "02 Okt 2026 • 20:01 WIB",
+    image: "./assets/images/proof/Testi5.jpg"
+  },
+  {
+    id: 6,
+    title: "Netflix",
+    time: "02 Okt 2026 • 20:15 WIB",
+    image: "./assets/images/proof/Testi 6.jpg"
+  },
+  {
+    id: 7,
+    title: "Netflix",
+    time: "03 Okt 2026 • 08:33 WIB",
+    image: "./assets/images/proof/Testi7.jpg"
   }
 ];
