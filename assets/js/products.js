@@ -58,171 +58,38 @@ const PRICELIST = [
     id: "netflix",
     name: "Netflix",
     category: "entertainment",
-    startingPrice: "16k",
+    startingPrice: "4k",
     logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_N_logo.svg",
     notes: [
       "fixing time 0-3 hari",
       "billing indonesia"
     ],
     variants: [
-      { type: "1p1u", items: [
-        { duration: "1 bulan", price: "31k" },
-        { duration: "2 bulan", price: "60k" },
-        { duration: "3 bulan", price: "90k" }
+      { type: "1P1U", items: [
+        { duration: "1 Hari", price: "5k" },
+        { duration: "2 Hari", price: "7k" },
+        { duration: "3 Hari", price: "9k" },
+        { duration: "7 Hari", price: "13k" },
+        { duration: "1 Bulan", price: "31k" },
+        { duration: "2 Bulan", price: "60k" },
+        { duration: "3 Bulan", price: "90k" }
       ]},
-      { type: "1p2u", items: [
-        { duration: "1 bulan", price: "16k" },
-        { duration: "2 bulan", price: "32k" },
-        { duration: "3 bulan", price: "48k" }
+      { type: "1P2U", items: [
+        { duration: "1 Hari", price: "4k" },
+        { duration: "2 Hari", price: "7k" },
+        { duration: "3 Hari", price: "9k" },
+        { duration: "7 Hari", price: "11k" },
+        { duration: "1 Bulan", price: "16k" },
+        { duration: "2 Bulan", price: "32k" },
+        { duration: "3 Bulan", price: "48k" }
       ]},
-      { type: "Semi Priv", items: [
-        { duration: "1 bulan", price: "33k" },
-        { duration: "2 bulan", price: "65k" },
-        { duration: "3 bulan", price: "95k" }
-      ]},
-      { type: "Private", items: [
-        { duration: "1 bulan", price: "158k" }
-      ]}
-    ]
-  },
-  {
-    id: "disney-hotstar",
-    name: "Disney+ Hotstar",
-    category: "entertainment",
-    startingPrice: "19k",
-    logo: "https://img.icons8.com/color/96/disney-plus.png",
-    notes: [
-      "akun seller",
-      "private bisa akun dari buyer",
-      "share login 1 perangkat, wajib kirim bukti"
-    ],
-    variants: [
-      { type: "Share Prem (6u)", items: [
-        { duration: "1 bulan", price: "27k" }
-      ]},
-      { type: "Share Prem (10u)", items: [
-        { duration: "1 bulan", price: "19k" }
-      ]},
-      { type: "Priv Std", items: [
-        { duration: "1 bulan", price: "77k" }
-      ]},
-      { type: "Priv Prem", items: [
-        { duration: "1 bulan", price: "92k" }
-      ]}
-    ]
-  },
-  {
-    id: "amazon-prime",
-    name: "Amazon Prime Video",
-    category: "entertainment",
-    startingPrice: "6k",
-    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prime-video.png",
-    notes: [
-      "akun seller"
-    ],
-    variants: [
-      { type: "Share (4u)", items: [
-        { duration: "1 bulan", price: "6k" },
-        { duration: "2 bulan", price: "11k" },
-        { duration: "3 bulan", price: "15k" }
+      { type: "Semi Private", items: [
+        { duration: "1 Bulan", price: "33k" },
+        { duration: "2 Bulan", price: "65k" },
+        { duration: "3 Bulan", price: "95k" }
       ]},
       { type: "Private", items: [
-        { duration: "1 bulan", price: "9k" },
-        { duration: "2 bulan", price: "17k" },
-        { duration: "3 bulan", price: "22k" }
-      ]}
-    ]
-  },
-  {
-    id: "hbo-max",
-    name: "HBO Max",
-    category: "entertainment",
-    startingPrice: "17k",
-    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/hbo-max.png",
-    notes: [
-      "akun seller",
-      "login tv beli 2 slot"
-    ],
-    variants: [
-      { type: "Share (8u)", items: [
-        { duration: "1 bulan", price: "17k" },
-        { duration: "2 bulan", price: "23k" },
-        { duration: "3 bulan", price: "32k" }
-      ]},
-      { type: "Private", items: [
-        { duration: "1 bulan", price: "58k" }
-      ]}
-    ]
-  },
-  {
-    id: "vidio-platinum",
-    name: "Vidio Platinum",
-    category: "entertainment",
-    startingPrice: "7k",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Vidio_logo.svg",
-    notes: [
-      "akun seller"
-    ],
-    variants: [
-      { type: "All Device (2u)", items: [
-        { duration: "1 bulan", price: "25k" }
-      ]},
-      { type: "All Device Priv", items: [
-        { duration: "1 bulan", price: "48k" }
-      ]},
-      { type: "Mobile (2u)", items: [
-        { duration: "1 bulan", price: "17k" }
-      ]},
-      { type: "Mobile Priv", items: [
-        { duration: "1 bulan", price: "30k" }
-      ]},
-      { type: "Bundle TV (2u)", items: [
-        { duration: "1 bulan", price: "7k" }
-      ]},
-      { type: "Bundle TV Priv", items: [
-        { duration: "1 bulan", price: "10k" }
-      ]}
-    ]
-  },
-  {
-    id: "vision-paytv",
-    name: "Vision PayTV",
-    category: "entertainment",
-    startingPrice: "10k",
-    logo: "https://img.icons8.com/color/96/tv-show.png",
-    notes: [
-      "akun seller",
-      "login email",
-      "soccer channel",
-      "sportstar 1&2",
-      "spotv 1&2",
-      "bein sport (2,4,5)",
-      "ada iklan & tidak bisa nonton replay/siaran ulang"
-    ],
-    variants: [
-      { type: "Share (2u)", items: [
-        { duration: "1 bulan", price: "12k" }
-      ]},
-      { type: "Private", items: [
-        { duration: "1 minggu", price: "10k" },
-        { duration: "1 bulan", price: "18k" }
-      ]}
-    ]
-  },
-  {
-    id: "catchplay",
-    name: "Catchplay+",
-    category: "entertainment",
-    startingPrice: "5k",
-    logo: "https://img.icons8.com/color/96/popcorn.png",
-    notes: [
-      "login di web bukan di app",
-      "tidak termasuk single rent/buy"
-    ],
-    variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "5k" },
-        { duration: "1 tahun", price: "11k" }
+        { duration: "1 Bulan", price: "158k" }
       ]}
     ]
   },
@@ -230,60 +97,55 @@ const PRICELIST = [
     id: "wetv",
     name: "WeTV",
     category: "entertainment",
-    startingPrice: "7k",
+    startingPrice: "2k",
     logo: "https://img.icons8.com/color/96/wechat.png",
     notes: [
-      "akun seller",
-      "login biasa",
-      "tidak bisa login di tv kecuali priv"
+      "acc seller",
+      "login di TV only private"
     ],
     variants: [
-      { type: "Share (6u)", items: [
-        { duration: "1 bulan", price: "7k" }
+      { type: "Sharing 6U", items: [
+        { duration: "1 Hari", price: "2k" },
+        { duration: "1 Bulan", price: "10k" }
       ]},
-      { type: "Share Anlim (3u)", items: [
-        { duration: "1 bulan", price: "13k" }
+      { type: "Sharing 3U (Antilimit)", items: [
+        { duration: "1 Bulan", price: "15k" }
       ]},
       { type: "Private", items: [
-        { duration: "1 bulan", price: "35k" }
+        { duration: "1 Bulan", price: "32k" }
       ]}
     ]
   },
   {
-    id: "drakor-id",
-    name: "Drakor.id",
+    id: "vidio-platinum",
+    name: "Vidio Platinum",
     category: "entertainment",
-    startingPrice: "5k",
-    logo: "https://img.icons8.com/fluency/96/video-playlist.png",
+    startingPrice: "4k",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Vidio_logo.svg",
     notes: [
-      "akun seller",
-      "login biasa",
-      "tidak bisa login di tv kecuali priv"
+      "akun seller"
     ],
     variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "5k" },
-        { duration: "2 bulan", price: "6k" },
-        { duration: "3 bulan", price: "7k" },
-        { duration: "6 bulan", price: "8k" },
-        { duration: "1 tahun", price: "10k" }
-      ]}
-    ]
-  },
-  {
-    id: "gagaoolala",
-    name: "gagaoolala",
-    category: "entertainment",
-    startingPrice: "7k",
-    logo: "https://img.icons8.com/fluency/96/rainbow.png",
-    notes: [
-      "akun seller",
-      "login biasa",
-      "tidak bisa login di tv"
-    ],
-    variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "7k" }
+      { type: "All Device", items: [
+        { duration: "Priv 1 Hari", price: "8k" },
+        { duration: "Priv 3 Hari", price: "15k" },
+        { duration: "Priv 7 Hari", price: "24k" },
+        { duration: "Priv 1 Bulan", price: "45k" },
+        { duration: "Sharing 1 Bulan", price: "26k" }
+      ]},
+      { type: "Mobile", items: [
+        { duration: "Priv 1 Hari", price: "5k" },
+        { duration: "Priv 3 Hari", price: "13k" },
+        { duration: "Priv 7 Hari", price: "20k" },
+        { duration: "Priv 1 Bulan", price: "28k" },
+        { duration: "Sharing 1 Bulan", price: "22k" }
+      ]},
+      { type: "TV", items: [
+        { duration: "Priv 1 Hari", price: "4k" },
+        { duration: "Priv 3 Hari", price: "10k" },
+        { duration: "Priv 7 Hari", price: "15k" },
+        { duration: "Priv 1 Bulan", price: "17k" },
+        { duration: "Sharing 1 Bulan", price: "10k" }
       ]}
     ]
   },
@@ -291,93 +153,55 @@ const PRICELIST = [
     id: "viu",
     name: "Viu",
     category: "entertainment",
-    startingPrice: "400p",
+    startingPrice: "500p",
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Viu_logo.svg",
     notes: [
-      "akun seller"
+      "acc seller",
+      "durasi harian–6 bulan full garansi",
+      "durasi 1 tahun garansi 6 bulan"
     ],
     variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "5k" },
+        { duration: "1 Tahun", price: "10k" }
+      ]},
       { type: "Private Biasa", items: [
-        { duration: "1 hari", price: "400p" },
-        { duration: "2 hari", price: "450p" },
-        { duration: "3 hari", price: "500p" },
-        { duration: "4 hari", price: "550p" },
-        { duration: "5 hari", price: "600p" },
-        { duration: "6 hari", price: "650p" },
-        { duration: "7 hari", price: "800p" },
-        { duration: "1 bulan", price: "2,5k" },
-        { duration: "2 bulan", price: "4,5k" },
-        { duration: "3 bulan", price: "6k" },
-        { duration: "1 tahun", price: "8k" }
+        { duration: "1 Hari", price: "500p" },
+        { duration: "1 Bulan", price: "5k" },
+        { duration: "2 Bulan", price: "8k" },
+        { duration: "1 Tahun", price: "15k" }
       ]},
-      { type: "Antilimit", items: [
-        { duration: "1 bulan", price: "3,5k" },
-        { duration: "2 bulan", price: "5k" },
-        { duration: "3 bulan", price: "7k" },
-        { duration: "1 tahun", price: "10k" }
+      { type: "Private Antilimit", items: [
+        { duration: "1 Hari", price: "800p" },
+        { duration: "1 Bulan", price: "7k" },
+        { duration: "2 Bulan", price: "10k" },
+        { duration: "1 Tahun", price: "15k" },
+        { duration: "Lifetime", price: "25k" }
+      ]},
+      { type: "VIU+ Sharing", items: [
+        { duration: "1 Bulan", price: "40k" }
       ]}
     ]
   },
   {
-    id: "iqiyi",
-    name: "iQIYI",
+    id: "disney-hotstar",
+    name: "Disney+ Hotstar",
     category: "entertainment",
-    startingPrice: "500p",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/d/dd/IQiyi_logo_2022.svg",
+    startingPrice: "5k",
+    logo: "https://img.icons8.com/color/96/disney-plus.png",
     notes: [
-      "akun seller",
-      "share akun vip premium",
-      "priv akun vip standar",
-      "tidak bisa login di tv kecuali priv"
+      "private nomor customer",
+      "acc seller full garansi"
     ],
     variants: [
-      { type: "Share", items: [
-        { duration: "1 hari", price: "500p" },
-        { duration: "2 hari", price: "600p" },
-        { duration: "3 hari", price: "700p" },
-        { duration: "4 hari", price: "800p" },
-        { duration: "5 hari", price: "900p" },
-        { duration: "6 hari", price: "1k" },
-        { duration: "7 hari", price: "1,5k" },
-        { duration: "1 bulan", price: "4k" },
-        { duration: "2 bulan", price: "6k" },
-        { duration: "3 bulan", price: "8k" },
-        { duration: "6 bulan", price: "10k" },
-        { duration: "1 tahun", price: "12k" }
+      { type: "Sharing Premium", items: [
+        { duration: "n Hari (Per Hari)", price: "5k/hari" },
+        { duration: "1 Bulan (6U)", price: "28k" },
+        { duration: "1 Bulan (10U)", price: "20k" }
       ]},
       { type: "Private", items: [
-        { duration: "1 bulan", price: "35k" }
-      ]}
-    ]
-  },
-  {
-    id: "bstation",
-    name: "Bstation",
-    category: "entertainment",
-    startingPrice: "500p",
-    logo: "https://img.icons8.com/color/96/bilibili.png",
-    notes: [
-      "akun seller",
-      "login google/biasa",
-      "tidak bisa login di tv kecuali priv"
-    ],
-    variants: [
-      { type: "Share", items: [
-        { duration: "1 hari", price: "500p" },
-        { duration: "2 hari", price: "600p" },
-        { duration: "3 hari", price: "700p" },
-        { duration: "4 hari", price: "800p" },
-        { duration: "5 hari", price: "900p" },
-        { duration: "6 hari", price: "1k" },
-        { duration: "7 hari", price: "1,5k" },
-        { duration: "1 bulan", price: "5k" },
-        { duration: "2 bulan", price: "7k" },
-        { duration: "3 bulan", price: "9k" },
-        { duration: "6 bulan", price: "12k" },
-        { duration: "1 tahun", price: "18k" }
-      ]},
-      { type: "Private", items: [
-        { duration: "1 bulan", price: "40k" }
+        { duration: "1 Bulan (Std)", price: "82k" },
+        { duration: "1 Bulan (Premium)", price: "98k" }
       ]}
     ]
   },
@@ -385,7 +209,7 @@ const PRICELIST = [
     id: "youku",
     name: "Youku",
     category: "entertainment",
-    startingPrice: "500p",
+    startingPrice: "700p",
     logo: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Youku_logo.svg",
     notes: [
       "akun seller",
@@ -393,72 +217,440 @@ const PRICELIST = [
       "tidak bisa login di tv kecuali priv"
     ],
     variants: [
-      { type: "Share", items: [
-        { duration: "1 hari", price: "500p" },
-        { duration: "2 hari", price: "600p" },
-        { duration: "3 hari", price: "700p" },
-        { duration: "4 hari", price: "800p" },
-        { duration: "5 hari", price: "900p" },
-        { duration: "6 hari", price: "1k" },
-        { duration: "7 hari", price: "1,5k" },
-        { duration: "1 bulan", price: "5k" },
-        { duration: "2 bulan", price: "7k" },
-        { duration: "3 bulan", price: "8k" },
-        { duration: "6 bulan", price: "10k" },
-        { duration: "1 tahun", price: "13k" }
+      { type: "Sharing", items: [
+        { duration: "n Hari (Per Hari)", price: "700p/hari" },
+        { duration: "1 Bulan", price: "8k" },
+        { duration: "3 Bulan", price: "12k" },
+        { duration: "1 Tahun", price: "20k" }
       ]},
       { type: "Private", items: [
-        { duration: "1 bulan", price: "32k" }
+        { duration: "1 Bulan", price: "35k" }
+      ]}
+    ]
+  },
+  {
+    id: "iqiyi",
+    name: "iQIYI",
+    category: "entertainment",
+    startingPrice: "2,5k",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/dd/IQiyi_logo_2022.svg",
+    notes: [
+      "akun seller",
+      "tidak bisa login di tv kecuali priv"
+    ],
+    variants: [
+      { type: "Share Premium", items: [
+        { duration: "1 Hari", price: "2,5k" },
+        { duration: "3 Hari", price: "6k" },
+        { duration: "7 Hari", price: "9k" },
+        { duration: "1 Bulan", price: "10k" },
+        { duration: "3 Bulan", price: "15k" },
+        { duration: "1 Tahun", price: "25k" }
+      ]},
+      { type: "Share Standard", items: [
+        { duration: "1 Bulan", price: "8k" }
+      ]},
+      { type: "Private Standard", items: [
+        { duration: "1 Bulan", price: "27k" }
+      ]},
+      { type: "Private Premium", items: [
+        { duration: "1 Bulan", price: "32k" }
+      ]}
+    ]
+  },
+  {
+    id: "hbo-max",
+    name: "HBO Max",
+    category: "entertainment",
+    startingPrice: "20k",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/hbo-max.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Standard Sharing", items: [
+        { duration: "1 Bulan", price: "20k" }
+      ]},
+      { type: "Standard Private", items: [
+        { duration: "1 Bulan", price: "28k" }
+      ]},
+      { type: "Ultimate Sharing", items: [
+        { duration: "1 Bulan", price: "20k" }
+      ]},
+      { type: "Ultimate Private", items: [
+        { duration: "1 Bulan", price: "55k" }
+      ]}
+    ]
+  },
+  {
+    id: "amazon-prime",
+    name: "Prime Video",
+    category: "entertainment",
+    startingPrice: "2k",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prime-video.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing (3U)", items: [
+        { duration: "1 Hari", price: "2k" },
+        { duration: "3 Hari", price: "5k" },
+        { duration: "7 Hari", price: "9k" },
+        { duration: "1 Bulan", price: "11k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "13k" }
+      ]}
+    ]
+  },
+  {
+    id: "melolo",
+    name: "Melolo",
+    category: "entertainment",
+    startingPrice: "10k",
+    logo: "https://img.icons8.com/fluency/96/video-playlist.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "10k" }
+      ]}
+    ]
+  },
+  {
+    id: "bstation",
+    name: "Bstation",
+    category: "entertainment",
+    startingPrice: "9k",
+    logo: "https://img.icons8.com/color/96/bilibili.png",
+    notes: [
+      "akun seller",
+      "tidak bisa login di tv kecuali priv"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "9k" },
+        { duration: "3 Bulan", price: "13k" },
+        { duration: "6 Bulan", price: "15k" },
+        { duration: "1 Tahun", price: "17k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "35k" }
       ]}
     ]
   },
   {
     id: "crunchyroll",
-    name: "Crunchyroll Megafan",
+    name: "Crunchyroll",
     category: "entertainment",
-    startingPrice: "1,5k",
+    startingPrice: "9k",
     logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/crunchyroll.png",
     notes: [
       "akun seller",
       "bisa download film",
-      "bisa pakai vpn, jika anime tidak ada"
+      "bisa pakai vpn jika anime tidak ada"
     ],
     variants: [
-      { type: "Share", items: [
-        { duration: "7 hari", price: "1,5k" },
-        { duration: "1 bulan", price: "6k" },
-        { duration: "2 bulan", price: "7k" },
-        { duration: "3 bulan", price: "8k" },
-        { duration: "6 bulan", price: "9k" },
-        { duration: "1 tahun", price: "10k" }
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "9k" },
+        { duration: "1 Tahun", price: "20k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "29k" }
+      ]}
+    ]
+  },
+  {
+    id: "loklok",
+    name: "Loklok",
+    category: "entertainment",
+    startingPrice: "20k",
+    logo: "https://img.icons8.com/color/96/cinema-.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Share Basic (3U)", items: [
+        { duration: "1 Bulan", price: "20k" }
+      ]},
+      { type: "Share Standard (3U)", items: [
+        { duration: "1 Bulan", price: "24k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "40 Hari", price: "40k" }
+      ]}
+    ]
+  },
+  {
+    id: "catchplay",
+    name: "Catchplay+",
+    category: "entertainment",
+    startingPrice: "10k",
+    logo: "https://img.icons8.com/color/96/popcorn.png",
+    notes: [
+      "login di web/app",
+      "tidak termasuk single rent/buy"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "10k" },
+        { duration: "6 Bulan", price: "23k" },
+        { duration: "1 Tahun", price: "27k" }
+      ]}
+    ]
+  },
+  {
+    id: "drakor-id",
+    name: "Drakor.id",
+    category: "entertainment",
+    startingPrice: "7k",
+    logo: "https://img.icons8.com/fluency/96/video-playlist.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "7k" },
+        { duration: "3 Bulan", price: "14k" },
+        { duration: "6 Bulan", price: "20k" },
+        { duration: "1 Tahun", price: "21k" }
+      ]}
+    ]
+  },
+  {
+    id: "dramaboss",
+    name: "DramaBoss",
+    category: "entertainment",
+    startingPrice: "21k",
+    logo: "https://img.icons8.com/color/96/tv-show.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Tahun", price: "21k" }
+      ]}
+    ]
+  },
+  {
+    id: "dramabox",
+    name: "DramaBox",
+    category: "entertainment",
+    startingPrice: "8k",
+    logo: "https://img.icons8.com/fluency/96/video.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "7 Hari", price: "8k" },
+        { duration: "1 Bulan", price: "14k" }
+      ]}
+    ]
+  },
+  {
+    id: "flextv",
+    name: "FlexTV",
+    category: "entertainment",
+    startingPrice: "11k",
+    logo: "https://img.icons8.com/color/96/play-button-circled.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "11k" }
+      ]}
+    ]
+  },
+  {
+    id: "gagaoolala",
+    name: "GagaOOLala",
+    category: "entertainment",
+    startingPrice: "12k",
+    logo: "https://img.icons8.com/fluency/96/rainbow.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "12k" }
+      ]}
+    ]
+  },
+  {
+    id: "moviebox",
+    name: "Moviebox",
+    category: "entertainment",
+    startingPrice: "9k",
+    logo: "https://img.icons8.com/color/96/popcorn.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "9k" },
+        { duration: "3 Bulan", price: "14k" },
+        { duration: "1 Tahun", price: "20k" }
+      ]}
+    ]
+  },
+  {
+    id: "reelshort",
+    name: "ReelShort",
+    category: "entertainment",
+    startingPrice: "12k",
+    logo: "https://img.icons8.com/color/96/video-call.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "12k" },
+        { duration: "3 Bulan", price: "22k" },
+        { duration: "6 Bulan", price: "31k" }
+      ]}
+    ]
+  },
+  {
+    id: "sunsiroll",
+    name: "Sunsiroll",
+    category: "entertainment",
+    startingPrice: "17k",
+    logo: "https://img.icons8.com/color/96/anime.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Tahun", price: "17k" }
+      ]}
+    ]
+  },
+  {
+    id: "viki",
+    name: "Viki",
+    category: "entertainment",
+    startingPrice: "16k",
+    logo: "https://img.icons8.com/color/96/tv.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "16k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "31k" }
+      ]}
+    ]
+  },
+  {
+    id: "wibuku",
+    name: "Wibuku",
+    category: "entertainment",
+    startingPrice: "10k",
+    logo: "https://img.icons8.com/color/96/anime.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "10k" },
+        { duration: "6 Bulan", price: "18k" },
+        { duration: "1 Tahun", price: "25k" }
+      ]}
+    ]
+  },
+  {
+    id: "vision-paytv",
+    name: "Vision+",
+    category: "entertainment",
+    startingPrice: "11k",
+    logo: "https://img.icons8.com/color/96/tv-show.png",
+    notes: [
+      "akun seller",
+      "login email",
+      "soccer channel, bein sport (2,4,5), sportstar 1&2, spotv 1&2"
+    ],
+    variants: [
+      { type: "Premium Sharing", items: [
+        { duration: "7 Hari", price: "11k" },
+        { duration: "1 Bulan", price: "15k" }
+      ]},
+      { type: "Premium + Beinsport Sharing", items: [
+        { duration: "1 Bulan", price: "16k" }
+      ]},
+      { type: "Premium + Beinsport Private", items: [
+        { duration: "1 Bulan", price: "27k" }
+      ]}
+    ]
+  },
+  {
+    id: "mangotv",
+    name: "Mango TV",
+    category: "entertainment",
+    startingPrice: "15k",
+    logo: "https://img.icons8.com/color/96/mango.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing (VIP)", items: [
+        { duration: "1 Bulan", price: "15k" }
+      ]},
+      { type: "Sharing (SVIP)", items: [
+        { duration: "1 Bulan", price: "17k" }
       ]}
     ]
   },
 
   // ==================== MUSIC ====================
   {
+    id: "spotify",
+    name: "Spotify Premium",
+    category: "music",
+    startingPrice: "16k",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/spotify.png",
+    notes: [
+      "fullgar = full garansi",
+      "nogar = no garansi"
+    ],
+    variants: [
+      { type: "Famplan", items: [
+        { duration: "1 Bulan (Nogar)", price: "16k" },
+        { duration: "1 Bulan (Fullgar)", price: "18k" },
+        { duration: "2 Bulan (Fullgar)", price: "30k" }
+      ]},
+      { type: "Indplan (Fullgar)", items: [
+        { duration: "1 Bulan", price: "24k" }
+      ]}
+    ]
+  },
+  {
     id: "youtube",
-    name: "YouTube",
+    name: "YouTube Premium",
     category: "music",
     startingPrice: "7k",
     logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/youtube.png",
     notes: [
-      "akun seller +7k",
-      "+2k/bulan untuk full garansi inc garansi hh yt",
-      "indplan harus gmail fresh",
-      "limit bergabung 2x/th"
+      "acc seller tambahan biaya ask before order",
+      "indplan butuh gmail fresh",
+      "limit gabung famili 2x/tahun"
     ],
     variants: [
       { type: "Famplan", items: [
-        { duration: "1 bulan", price: "7k" },
-        { duration: "2 bulan", price: "13k" }
+        { duration: "1 Bulan", price: "7k" },
+        { duration: "n Bulan", price: "7k/bulan" }
       ]},
       { type: "Indplan", items: [
-        { duration: "1 bulan", price: "12k" }
+        { duration: "1 Bulan", price: "10k" },
+        { duration: "n Bulan", price: "10k/bulan" }
       ]},
       { type: "Mixplan", items: [
-        { duration: "2 bulan", price: "15k" },
-        { duration: "3 bulan", price: "20k" }
+        { duration: "3 Bulan", price: "30k" },
+        { duration: "5 Bulan", price: "50k" }
       ]}
     ]
   },
@@ -469,56 +661,82 @@ const PRICELIST = [
     startingPrice: "9k",
     logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apple-music.png",
     notes: [
-      "akun buyer",
-      "via inv/link imess",
-      "bisa ppj/aktivasi"
+      "acc buyer",
+      "via invite link"
     ],
     variants: [
-      { type: "Reguler", items: [
-        { duration: "1 bulan", price: "9k" },
-        { duration: "2 bulan", price: "15k" },
-        { duration: "3 bulan (Renew)", price: "22k" },
-        { duration: "3 bulan (No Renew)", price: "24k" }
+      { type: "Indplan (Android Only)", items: [
+        { duration: "1 Bulan", price: "13k" }
+      ]},
+      { type: "Famplan (iOS/Android)", items: [
+        { duration: "1 Bulan", price: "9k" }
+      ]}
+    ]
+  },
+  {
+    id: "deezer",
+    name: "Deezer",
+    category: "music",
+    startingPrice: "10k",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/deezer.png",
+    notes: [
+      "acc buyer wajib fresh"
+    ],
+    variants: [
+      { type: "Famplan", items: [
+        { duration: "1 Bulan", price: "10k" }
       ]}
     ]
   },
 
   // ==================== EDUCATION, AI & PRODUCTIVITY ====================
   {
-    id: "zoom",
-    name: "Zoom",
+    id: "chatgpt-go",
+    name: "ChatGPT",
     category: "education",
-    startingPrice: "6,5k",
-    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/zoom.png",
+    startingPrice: "9k",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/chatgpt.png",
     notes: [
-      "akun seller"
+      "akun seller",
+      "plus 8u / go 8u & 5u"
     ],
     variants: [
-      { type: "Private (100p)", items: [
-        { duration: "1 minggu", price: "6,5k" },
-        { duration: "2 minggu", price: "11k" },
-        { duration: "1 bulan", price: "18k" }
+      { type: "Plus Sharing (8U)", items: [
+        { duration: "1 Hari", price: "9k" },
+        { duration: "3 Hari", price: "13k" },
+        { duration: "7 Hari", price: "21k" },
+        { duration: "1 Bulan", price: "45k" }
+      ]},
+      { type: "Go Sharing (8U)", items: [
+        { duration: "1 Hari", price: "10k" },
+        { duration: "3 Hari", price: "14k" },
+        { duration: "7 Hari", price: "19k" },
+        { duration: "1 Bulan", price: "21k" }
+      ]},
+      { type: "Go Sharing (5U)", items: [
+        { duration: "1 Hari", price: "12k" },
+        { duration: "3 Hari", price: "17k" },
+        { duration: "7 Hari", price: "23k" },
+        { duration: "1 Bulan", price: "27k" }
       ]}
     ]
   },
   {
-    id: "chatgpt-go",
-    name: "ChatGPT Go",
+    id: "perplexity",
+    name: "Perplexity AI",
     category: "education",
     startingPrice: "20k",
-    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/chatgpt.png",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/perplexity.png",
     notes: [
-      "akun seller"
+      "akun seller",
+      "full garansi"
     ],
     variants: [
-      { type: "Sharing (8u)", items: [
-        { duration: "1 bulan", price: "20k" }
-      ]},
-      { type: "Sharing (5u)", items: [
-        { duration: "1 bulan", price: "24k" }
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "20k" }
       ]},
       { type: "Private", items: [
-        { duration: "1 bulan", price: "53k" }
+        { duration: "1 Bulan", price: "24k" }
       ]}
     ]
   },
@@ -542,72 +760,19 @@ const PRICELIST = [
     ]
   },
   {
-    id: "grammarly",
-    name: "Grammarly",
+    id: "zoom",
+    name: "Zoom Pro",
     category: "education",
-    startingPrice: "6k",
-    logo: "https://img.icons8.com/color/96/grammarly.png",
+    startingPrice: "11k",
+    logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/zoom.png",
     notes: [
-      "akun seller/buyer",
-      "full garansi"
+      "akun private 100 peserta"
     ],
     variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "6k" }
-      ]}
-    ]
-  },
-  {
-    id: "wattpad",
-    name: "Wattpad",
-    category: "education",
-    startingPrice: "4k",
-    logo: "https://img.icons8.com/color/96/wattpad.png",
-    notes: [
-      "akun seller",
-      "need email buyer"
-    ],
-    variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "4k" },
-        { duration: "6 bulan", price: "8k" },
-        { duration: "1 tahun", price: "11k" }
-      ]},
-      { type: "Private", items: [
-        { duration: "1 bulan", price: "18k" }
-      ]}
-    ]
-  },
-  {
-    id: "quillbot",
-    name: "Quillbot",
-    category: "education",
-    startingPrice: "6k",
-    logo: "https://img.icons8.com/fluency/96/quill.png",
-    notes: [
-      "akun seller"
-    ],
-    variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "6k" }
-      ]}
-    ]
-  },
-  {
-    id: "scribd",
-    name: "Scribd",
-    category: "education",
-    startingPrice: "5k",
-    logo: "https://img.icons8.com/color/96/scribd.png",
-    notes: [
-      "akun seller"
-    ],
-    variants: [
-      { type: "Share", items: [
-        { duration: "1 bulan", price: "5k" }
-      ]},
-      { type: "Private", items: [
-        { duration: "1 bulan", price: "12k" }
+      { type: "Private (100 Peserta)", items: [
+        { duration: "1 Minggu", price: "11k" },
+        { duration: "2 Minggu", price: "17k" },
+        { duration: "1 Bulan", price: "20k" }
       ]}
     ]
   },
@@ -615,19 +780,17 @@ const PRICELIST = [
     id: "duolingo-super",
     name: "Duolingo Super",
     category: "education",
-    startingPrice: "7k",
+    startingPrice: "8k",
     logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/duolingo.png",
     notes: [
-      "famplan pribadi",
-      "butuh email dan pass"
+      "famplan",
+      "full garansi"
     ],
     variants: [
-      { type: "Aktivasi", items: [
-        { duration: "2 minggu", price: "7k" },
-        { duration: "1 bulan", price: "10k" }
-      ]},
-      { type: "Private PPJ", items: [
-        { duration: "1 bulan", price: "15k" }
+      { type: "Famplan", items: [
+        { duration: "2 Minggu", price: "8k" },
+        { duration: "1 Bulan", price: "10k" },
+        { duration: "2 Bulan", price: "15k" }
       ]}
     ]
   },
@@ -635,14 +798,118 @@ const PRICELIST = [
     id: "microsoft-365",
     name: "Microsoft 365",
     category: "education",
-    startingPrice: "8k",
+    startingPrice: "10k",
     logo: "https://img.icons8.com/color/96/microsoft-365.png",
     notes: [
-      "via invite"
+      "via invite famplan"
     ],
     variants: [
       { type: "Famplan", items: [
-        { duration: "1 bulan", price: "8k" }
+        { duration: "1 Bulan", price: "10k" },
+        { duration: "2 Bulan", price: "14k" }
+      ]}
+    ]
+  },
+  {
+    id: "wps",
+    name: "WPS Office",
+    category: "education",
+    startingPrice: "17k",
+    logo: "https://img.icons8.com/color/96/file.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan (+AI)", price: "17k" },
+        { duration: "1 Tahun", price: "28k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "30k" }
+      ]}
+    ]
+  },
+  {
+    id: "grammarly",
+    name: "Grammarly",
+    category: "education",
+    startingPrice: "16k",
+    logo: "https://img.icons8.com/color/96/grammarly.png",
+    notes: [
+      "akun seller/buyer",
+      "full garansi"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "16k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "31k" }
+      ]}
+    ]
+  },
+  {
+    id: "quillbot",
+    name: "QuillBot",
+    category: "education",
+    startingPrice: "17k",
+    logo: "https://img.icons8.com/fluency/96/quill.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "17k" }
+      ]}
+    ]
+  },
+  {
+    id: "scribd",
+    name: "Scribd",
+    category: "education",
+    startingPrice: "6k",
+    logo: "https://img.icons8.com/color/96/scribd.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "6k" }
+      ]},
+      { type: "Private", items: [
+        { duration: "1 Bulan", price: "12k" }
+      ]}
+    ]
+  },
+  {
+    id: "wattpad",
+    name: "Wattpad Premium",
+    category: "education",
+    startingPrice: "12k",
+    logo: "https://img.icons8.com/color/96/wattpad.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "12k" },
+        { duration: "1 Tahun", price: "22k" }
+      ]}
+    ]
+  },
+  {
+    id: "fizzo",
+    name: "Fizzo Novel",
+    category: "education",
+    startingPrice: "10,5k",
+    logo: "https://img.icons8.com/color/96/book-reading.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "1 Bulan", price: "10,5k" },
+        { duration: "1 Tahun", price: "19k" }
       ]}
     ]
   },
@@ -650,15 +917,59 @@ const PRICELIST = [
     id: "kilonotes",
     name: "Kilonotes",
     category: "education",
-    startingPrice: "14k",
+    startingPrice: "21k",
     logo: "https://img.icons8.com/fluency/96/note.png",
     notes: [
-      "akun seller",
-      "need email buyer"
+      "akun seller"
     ],
     variants: [
-      { type: "Share Andro", items: [
-        { duration: "Lifetime", price: "14k" }
+      { type: "Premium", items: [
+        { duration: "1 Bulan", price: "21k" }
+      ]}
+    ]
+  },
+  {
+    id: "goodnotes",
+    name: "GoodNotes",
+    category: "education",
+    startingPrice: "25k",
+    logo: "https://img.icons8.com/fluency/96/note.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Premium", items: [
+        { duration: "6 Bulan", price: "25k" }
+      ]}
+    ]
+  },
+  {
+    id: "brainly",
+    name: "Brainly Plus",
+    category: "education",
+    startingPrice: "24k",
+    logo: "https://img.icons8.com/color/96/brain.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Premium", items: [
+        { duration: "6 Bulan", price: "24k" }
+      ]}
+    ]
+  },
+  {
+    id: "mathway",
+    name: "Mathway",
+    category: "education",
+    startingPrice: "16k",
+    logo: "https://img.icons8.com/color/96/calculator.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Premium", items: [
+        { duration: "6 Bulan", price: "16k" }
       ]}
     ]
   },
@@ -666,7 +977,7 @@ const PRICELIST = [
   // ==================== EDITING & PHOTO ====================
   {
     id: "canva",
-    name: "Canva",
+    name: "Canva Pro",
     category: "editing",
     startingPrice: "4k",
     logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/canva.png",
@@ -691,7 +1002,7 @@ const PRICELIST = [
   },
   {
     id: "capcut",
-    name: "CapCut",
+    name: "CapCut Pro",
     category: "editing",
     startingPrice: "7k",
     logo: "https://img.icons8.com/color/96/capcut.png",
@@ -707,6 +1018,37 @@ const PRICELIST = [
       { type: "iOS/Andro Private", items: [
         { duration: "1 minggu", price: "11k" },
         { duration: "1 bulan", price: "38k" }
+      ]}
+    ]
+  },
+  {
+    id: "ibis-paint",
+    name: "Ibis Paint X",
+    category: "editing",
+    startingPrice: "19k",
+    logo: "https://img.icons8.com/color/96/paint-palette.png",
+    notes: [
+      "akun seller",
+      "support iOS / Android"
+    ],
+    variants: [
+      { type: "Premium (iOS/Android)", items: [
+        { duration: "1 Tahun", price: "19k" }
+      ]}
+    ]
+  },
+  {
+    id: "mojo",
+    name: "Mojo Stories",
+    category: "editing",
+    startingPrice: "25k",
+    logo: "https://img.icons8.com/color/96/sparkling.png",
+    notes: [
+      "akun seller"
+    ],
+    variants: [
+      { type: "Sharing", items: [
+        { duration: "6 Bulan", price: "25k" }
       ]}
     ]
   },
@@ -728,7 +1070,7 @@ const PRICELIST = [
   },
   {
     id: "meitu",
-    name: "Meitu",
+    name: "Meitu VIP",
     category: "editing",
     startingPrice: "8k",
     logo: "https://img.icons8.com/color/96/face-id.png",
@@ -866,9 +1208,9 @@ const PRICELIST = [
   // ==================== ANOTHER APPLICATION ====================
   {
     id: "getcontact",
-    name: "Getcontact",
+    name: "Getcontact Premium",
     category: "others",
-    startingPrice: "12k",
+    startingPrice: "18k",
     logo: "https://img.icons8.com/color/96/contact-details.png",
     notes: [
       "aktivasi/ppj",
@@ -877,7 +1219,7 @@ const PRICELIST = [
     ],
     variants: [
       { type: "Premium", items: [
-        { duration: "1 bulan", price: "12k" }
+        { duration: "1 Bulan", price: "18k" }
       ]}
     ]
   },
