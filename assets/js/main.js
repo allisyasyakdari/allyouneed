@@ -273,7 +273,7 @@ function renderContactTab() {
       <a href="${STORE_CONFIG.twitterLink}" target="_blank" rel="noopener noreferrer" class="carrd-contact-btn bg-black text-white hover:bg-neutral-800">
         <span class="flex items-center gap-2">
           <i class="fa-brands fa-x-twitter text-lg"></i>
-          <span>Twitter / X @all_youneedyap</span>
+          <span>Twitter / X @cai4everlove</span>
         </span>
         <i class="fa-solid fa-arrow-right text-xs"></i>
       </a>
@@ -371,7 +371,7 @@ function renderProofTab() {
       Ingin melihat update & testimoni lainnya?<br />
       <a href="${STORE_CONFIG.twitterLink}" target="_blank" rel="noopener noreferrer" class="font-bold text-[#FF477E] hover:underline inline-flex items-center gap-1 mt-1">
         <i class="fa-brands fa-x-twitter"></i>
-        <span>Kunjungi Twitter / X @all_youneedyap</span>
+        <span>Kunjungi Twitter / X @cai4everlove</span>
         <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
       </a>
     </div>

@@ -14,7 +14,8 @@ const STORE_CONFIG = {
   
   // Link WhatsApp & Twitter Resmi
   whatsappLink: "https://wa.me/message/XRQLUTK4S6FWE1",
-  twitterLink: "https://x.com/all_youneedyap",
+  twitterLink: "https://x.com/cai4everlove",
+  twitterHandle: "@cai4everlove",
 
   // Gambar QRIS Pembayaran
   qrisImage: "./assets/images/qris.png",
